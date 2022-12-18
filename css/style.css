@@ -353,6 +353,10 @@ td {
   margin-bottom: 50px;
 }
 
+.link-wrapper>a {
+  width: 50%;
+}
+
 .link-box1,.link-box2 {
   width: 100%;
   position: relative;
