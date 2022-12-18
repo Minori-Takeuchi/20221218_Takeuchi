@@ -2,32 +2,39 @@ a {
   text-decoration: none;
 }
 
-header {
+body {
+  position: relative;
+}
+
+.header {
   width: 100%;
   height: 70px;
+
 }
 
 .header-content {
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+
 .header-logo {
-  width: 200px;
+  width: 30%;
   margin-left: 20px;
   
 }
 
 .header-list {
+  width: 70%;
   display: flex;
   justify-content: space-between;
 }
 
 .header-list-item {
   margin: 0 10px;
-  font-size: 18px;
   color: rgb(161, 161, 161);
 }
 
@@ -41,7 +48,7 @@ main {
 
 .eyecatch {
   position: relative;
-  height: 700px;
+  height: 500px;
 }
 
 .eyecatch-contents {
@@ -99,15 +106,25 @@ main {
   margin-bottom: 20px;
 }
 
+.news {
+  height: 500px;
+}
+
 .news-contents {
-  margin-left: 20%;
+  width: 70%;
+  display: block;
+  margin: 50px auto;
+}
+
+.news-wrapper {
+  width: 100%;
 }
 
 .news-text {
   padding: 20px;
   border-top: 1px solid rgb(187, 185, 185);
   color: rgb(136, 136, 136);
-  width: 70%;
+  width: 100%;
 }
 
 .news-text>span {
@@ -120,18 +137,28 @@ main {
 
 .news-text:last-child {
   border-bottom: 1px solid rgb(187, 185, 185);
-  margin-bottom: 100px;
 }
 
+.about {
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+  height: 500px;
+}
 
 .about-contents {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 40px;
   text-align: center;
+
 }
 
 .about-item-wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  margin: 40px 50px 100px 50px;
+  margin: 40px auto 100px auto;
 }
 
 .about-text-wrapper {
@@ -139,16 +166,21 @@ main {
 }
 
 .about-text {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .about-img {
   width: 25%;
 }
 
+.service {
+  
+  height: 600px;
+}
 
 .service-contents {
   margin: 0 20%;
+  padding-top: 40px;
 }
 
 .srevice-wrapper {
@@ -215,10 +247,12 @@ main {
 
 .blog {
   height: 600px;
+  background-color: rgb(238, 238, 238);
 }
 
 .blog-contents {
   margin-left: 10%;
+  padding-top: 40px;
 }
 
 .blog-wrapper {
@@ -230,6 +264,7 @@ main {
 
 .blog-card {
   width: 30%;
+  background-color: white;
 }
 
 .blog-item {
@@ -242,7 +277,7 @@ main {
   z-index: 0;
   color: white;
   position: absolute;
-  z-index: 0;
+  z-index: 2;
   padding: 10px 15px;
   background-color: rgb(184, 42, 101);
   border-radius: 10px 0 0 0;
@@ -251,7 +286,7 @@ main {
 .blog-img {
   width: 100%;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   border-radius: 10px 10px 0 0;
 }
 
@@ -275,7 +310,7 @@ main {
 
 .blog-btn {
   display: block;
-  margin: 20px auto;
+  margin: 30px auto;
   text-align: center;
   color: rgb(184, 42, 101);
   border: 2px solid rgb(184, 42, 101);
@@ -318,7 +353,12 @@ td {
 }
 
 .link-box1,.link-box2 {
+  width: 100%;
   position: relative;
+}
+
+.link-box1>img,.link-box2>img {
+  width: 100%;
 }
 
 
@@ -372,6 +412,8 @@ td {
 .footer {
   width: 100%;
   height: 50px;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer>small {
